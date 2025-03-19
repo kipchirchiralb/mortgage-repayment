@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(203, 41%, 72%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  background-color: white;
+  max-width: 75%;
+  display: flex;
+  margin: 40px auto;
+}
+
+main > form,
+main > section {
+  flex: 1;
+  padding: 30px;
+}
+
+main > section {
+  background-color: hsl(202, 55%, 16%);
+  border-bottom-left-radius: 80px;
+  color: white;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+input {
+  padding: 6px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+input[type="reset"] {
+  background: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  width: unset;
+  text-decoration: underline;
+  color: hsl(200, 26%, 54%);
+  cursor: pointer;
+}
+h1 {
+  font-size: 20px;
+  color: hsl(202, 55%, 16%);
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-group {
+  margin: 10px;
+}
+
+.input-group div {
+  display: flex;
+  border: 1px solid hsl(202, 55%, 16%);
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.input-group div:focus-within {
+  border-color: hsl(61, 70%, 52%);
+}
+.input-group div:focus-within span {
+  background-color: hsl(61, 70%, 52%);
+}
+.input-group span {
+  background-color: hsl(203, 41%, 72%);
+  padding: 6px 12px;
+}
+.flex-container {
+  display: flex;
+  gap: 12px;
+}
+div.radio-group {
+  align-items: center;
+  justify-content: start;
+  padding: 6px;
+}
+div.radio-group input {
+  width: max-content;
+  margin-right: 8px;
+}
+div.radio-group:focus-within {
+  background-color: hsla(61, 70%, 52%, 0.125);
+}
+button[type="submit"] {
+  display: flex;
+  align-items: center;
+  background-color: hsl(61, 70%, 52%);
+  padding: 8px 14px;
+  border-radius: 25px;
+  border: none;
+}
+
+.completed-result {
+  display: none;
+}
+.empty-result {
+  text-align: center;
+}
+
+.empty-result p {
+  color: rgb(166, 170, 173);
+  margin-top: 16px;
+}
