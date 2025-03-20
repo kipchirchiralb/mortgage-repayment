@@ -123,3 +123,9 @@ button[type="submit"] {
   color: rgb(166, 170, 173);
   margin-top: 16px;
 }
+
+/* error message small element */
+.error-Message {
+  color: hsl(4, 69%, 50%);
+  display: none;
+}

@@ -28,6 +28,9 @@
             <span>&#163;</span>
             <input type="number" name="amount" id="amount" />
           </div>
+          <small class="error-Message" id="amount-error"
+            >This field is required or above 0
+          </small>
         </div>
         <div class="flex-container">
           <div class="input-group">
@@ -36,6 +39,7 @@
               <input type="number" name="term" id="term" />
               <span>years</span>
             </div>
+            <small class="error-Message">This field is </small>
           </div>
           <div class="input-group">
             <label for="rate">Interest Rate</label>
@@ -43,6 +47,7 @@
               <input type="number" name="rate" id="rate" />
               <span>%</span>
             </div>
+            <small class="error-Message">This field is </small>
           </div>
         </div>
         <div class="input-group">
@@ -65,6 +70,9 @@
             />
             <label for="interest-only">Interest Only</label>
           </div>
+          <small class="error-Message" id="radio-error"
+            >This field is required</small
+          >
         </div>
         <button type="submit">
           <img
@@ -107,5 +115,6 @@
         </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
